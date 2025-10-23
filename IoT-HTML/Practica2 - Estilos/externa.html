@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rammstein — Hoja de estilo externa</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-wrap">
+      <a class="brand" href="./index.html">
+        <img src="../imagenes/TecMty.png" alt="Tec de Monterrey" />
+        <h1>César Daniel Aguilar Kuri</h1>
+      </a>
+      <ul class="links">
+        <li><a href="./inline.html">Inline</a></li>
+        <li><a href="./interna.html">Interna</a></li>
+        <li><a class="active" href="./externa.html">Externa</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <h1>Rammstein</h1>
+      <h2>Banda alemana de metal industrial</h2>
+    </section>
+
+    <section class="grid">
+      <article>
+        <h3>¿Por qué me inspira?</h3>
+        <p>
+          Su diseño sonoro, precisión rítmica y producción en vivo me motivan a crear música con estándares
+          altos: arreglos contundentes, sintetizadores que refuerzan la armonía, y una estética visual coherente.
+        </p>
+        <a class="btn" href="https://www.rammstein.de/en/" target="_blank" rel="noopener">Sitio oficial</a>
+      </article>
+
+      <figure class="card media">
+        <img src="../imagenes/Rammstein.jpg" alt="Rammstein en vivo">
+        <figcaption>Imagen promocional de Rammstein.</figcaption>
+      </figure>
+
+      <div class="card video">
+        <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/NeQM1c-XCDc"
+          title="Rammstein - Deutschland (Official Video)"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <nav class="versions">
+      <a class="chip" href="./inline.html">Ver versión inline</a>
+      <a class="chip" href="./interna.html">Ver versión interna</a>
+      <a class="chip active" href="./externa.html">Ver versión externa</a>
+    </nav>
+  </main>
+</body>
+</html>
