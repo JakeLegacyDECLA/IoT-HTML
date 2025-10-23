@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rammstein — Estilos inline</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body style="margin:0;height:100%;font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#e5e7eb;background:linear-gradient(135deg,#0f172a,#1e293b)">
+  <!-- Navbar -->
+  <header style="position:sticky;top:0;background:#38b6ff;box-shadow:0 2px 5px rgba(0,0,0,.15);z-index:100">
+    <div style="max-width:1100px;margin:0 auto;padding:12px 16px;display:flex;align-items:center;justify-content:space-between">
+      <a href="./index.html" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff">
+        <img src="../imagenes/TecMty.png" alt="Tec de Monterrey" style="height:50px;width:auto">
+        <h1 style="margin:0;font-size:20px;font-weight:700">César Daniel Aguilar Kuri</h1>
+      </a>
+      <ul style="list-style:none;display:flex;gap:14px;margin:0;padding:0">
+        <li><a href="./inline.html" style="color:#fff;text-decoration:underline;font-weight:600">Inline</a></li>
+        <li><a href="./interna.html" style="color:#fff;text-decoration:none;font-weight:600;opacity:.95">Interna</a></li>
+        <li><a href="./externa.html" style="color:#fff;text-decoration:none;font-weight:600;opacity:.95">Externa</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main style="max-width:1100px;margin:24px auto;padding:0 16px">
+    <section>
+      <h1 style="margin:0 0 4px;font-size:40px">Rammstein</h1>
+      <h2 style="margin:0;color:#cbd5e1;font-weight:400">Banda alemana de metal industrial</h2>
+    </section>
+
+    <section style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:22px">
+      <article style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:16px">
+        <h3 style="margin-top:0">¿Por qué me inspira?</h3>
+        <p style="margin:0 0 12px">
+          Su diseño sonoro, precisión rítmica y producción en vivo me motivan a crear música con estándares
+          altos: arreglos contundentes, sintetizadores que refuerzan la armonía, y una estética visual coherente.
+        </p>
+        <a href="https://www.rammstein.de/en/" target="_blank" rel="noopener"
+           style="display:inline-block;background:#0ea5e9;color:#fff;text-decoration:none;border-radius:10px;padding:10px 14px;font-weight:700">Sitio oficial</a>
+      </article>
+
+      <figure style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:16px;margin:0">
+        <img src="../imagenes/Rammstein.jpg" alt="Rammstein en vivo" style="width:100%;height:auto;display:block;border-radius:12px">
+        <figcaption style="color:#cbd5e1;margin-top:8px">Imagen promocional de Rammstein.</figcaption>
+      </figure>
+
+      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:16px">
+        <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/NeQM1c-XCDc"
+          title="Rammstein - Deutschland (Official Video)"
+          frameborder="0"
+          style="width:100%;min-height:315px;border-radius:12px"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <nav style="margin:22px 0;display:flex;gap:10px;flex-wrap:wrap">
+      <a href="./inline.html" style="display:inline-block;padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.06);color:#e5e7eb;text-decoration:none">Versión inline</a>
+      <a href="./interna.html" style="display:inline-block;padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.06);color:#e5e7eb;text-decoration:none">Versión interna</a>
+      <a href="./externa.html" style="display:inline-block;padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.06);color:#e5e7eb;text-decoration:none">Versión externa</a>
+    </nav>
+  </main>
+</body>
+</html>

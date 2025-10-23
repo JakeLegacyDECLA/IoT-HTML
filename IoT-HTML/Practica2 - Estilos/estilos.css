@@ -1,0 +1,40 @@
+:root{
+  --bg1:#0f172a; --bg2:#1e293b; --text:#e5e7eb; --muted:#cbd5e1;
+  --accent:#38b6ff; --card:rgba(255,255,255,.06); --bd:rgba(255,255,255,.12);
+  --btn:#0ea5e9; --btnh:#0284c7;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{
+  font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  color:var(--text);
+  background:linear-gradient(135deg,var(--bg1),var(--bg2));
+}
+
+/* Navbar (tu diseño adaptado) */
+.navbar{position:sticky;top:0;background:#38b6ff;box-shadow:0 2px 5px rgba(0,0,0,.15);z-index:100}
+.nav-wrap{max-width:1100px;margin:0 auto;padding:12px 16px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none}
+.brand img{height:50px;width:auto}
+.brand h1{font-size:20px;margin:0;font-weight:700}
+.links{list-style:none;display:flex;gap:14px;margin:0;padding:0}
+.links a{color:#fff;text-decoration:none;font-weight:600;opacity:.95}
+.links a.active,.links a:hover{opacity:1;text-decoration:underline}
+
+/* Layout */
+.page{max-width:1100px;margin:24px auto;padding:0 16px}
+.hero h1{margin:0 0 4px;font-size:40px}
+.hero h2{margin:0;color:var(--muted);font-weight:400}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:22px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px}
+
+.media img{width:100%;height:auto;border-radius:12px;display:block}
+.video iframe{width:100%;min-height:315px;border-radius:12px}
+
+/* Buttons & chips */
+.btn{display:inline-block;background:var(--btn);color:#fff;text-decoration:none;border-radius:10px;padding:10px 14px;font-weight:700}
+.btn:hover{background:var(--btnh)}
+.versions{margin:22px 0;display:flex;gap:10px;flex-wrap:wrap}
+.chip{display:inline-block;padding:8px 12px;border-radius:999px;border:1px solid var(--bd);background:var(--card);color:var(--text);text-decoration:none}
+.chip.active,.chip:hover{border-color:#7dd3fc}
